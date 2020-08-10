@@ -1,0 +1,23 @@
+{
+  "name": "davibot",
+  "version": "1.0.0",
+  "description": "Just a bot to do somethings in a discord server like saying 'delicinha'",
+  "main": "src/index.js",
+  "repository": "https://github.com/developerdavi/davibot",
+  "author": "Davi Rodrigues",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "pm2 start src/index.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "ffmpeg-static": "^4.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
