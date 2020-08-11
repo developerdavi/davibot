@@ -19,6 +19,10 @@ async function handleCommand(msg) {
       sent.edit('Aqui estou mais um dia, sob o olhar sanguinário do vigia :sunglasses:')
     }, 3000)
   }
+
+  if (command === '!play' && msg.channel.name.toLowerCase() === 'geral') {
+    msg.reply('cara, não manda isso NO GERAL, VEI!!!')
+  }
 }
 
 client.on('message', async (msg) => {
