@@ -64,7 +64,7 @@ client.on('message', async (msg) => {
       const connection = await msg.member.voice.channel.join()
       connection.play(fs.createReadStream(`${__dirname}/static/vaidarmerda.mp3`), {
         volume: 0.5
-      }).on('close', () => {
+      }).on('finish', () => {
         connection.disconnect()
       })
     }
